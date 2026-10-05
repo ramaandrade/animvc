@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>AnimVC: A Jornada do Fundador | Web App de Capital Empreendedor</title>
+  <meta name="description" content="Aplicativo Web Gamificado de Capital Empreendedor (Venture Capital & Private Equity). Simulação de Cap Table, Curva J e Negociação de Rodadas.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AnimVC">
+  
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+
+  <!-- Container Mobile-First do Aplicativo -->
+  <main id="app-container">
+    
+    <!-- Top Header Fixo -->
+    <header class="app-header">
+      <div class="brand" id="brand-home-btn" title="AnimVC: A Jornada do Fundador">
+        <span class="brand-icon">🚀</span>
+        <div class="brand-text">
+          <h1>AnimVC</h1>
+          <span>A Jornada do Fundador</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="mute-btn" class="icon-btn" title="Alternar Som" aria-label="Alternar Som">🔊</button>
+      </div>
+    </header>
+
+    <!-- Barra de Métricas Principais da Startup -->
+    <section class="metrics-bar" id="metrics-bar" style="display: none;">
+      <div class="metric-pill">
+        <span class="metric-label">Fase Atual</span>
+        <span class="metric-val" id="metric-stage">Seed</span>
+      </div>
+      <div class="metric-pill">
+        <span class="metric-label">Runway</span>
+        <span class="metric-val runway" id="metric-runway">18 meses</span>
+      </div>
+      <div class="metric-pill">
+        <span class="metric-label">Valuation</span>
+        <span class="metric-val valuation" id="metric-valuation">R$ 5,0M</span>
+      </div>
+    </section>
+
+    <!-- Área de Conteúdo Dinâmica -->
+    <div class="main-view" id="main-view">
+      <!-- O conteúdo será injetado dinamicamente pelo UIManager -->
+    </div>
+
+    <!-- Barra de Navegação Inferior (Abas do Jogo) -->
+    <nav class="bottom-nav" id="bottom-nav" style="display: none;">
+      <button class="nav-tab active" data-tab="pitch">
+        <span class="tab-icon">💬</span>
+        <span>Pitch</span>
+      </button>
+      <button class="nav-tab" data-tab="captable">
+        <span class="tab-icon">🥧</span>
+        <span>Cap Table</span>
+      </button>
+      <button class="nav-tab" data-tab="termsheet">
+        <span class="tab-icon">📄</span>
+        <span>Term Sheet</span>
+      </button>
+      <button class="nav-tab" data-tab="jcurve">
+        <span class="tab-icon">📈</span>
+        <span>Curva J</span>
+      </button>
+    </nav>
+
+  </main>
+
+  <!-- Scripts do Motor do Jogo -->
+  <script src="./js/capTableEngine.js"></script>
+  <script src="./js/characters.js"></script>
+  <script src="./js/macroCards.js"></script>
+  <script src="./js/termSheet.js"></script>
+  <script src="./js/jCurveEngine.js"></script>
+  <script src="./js/roundsData.js"></script>
+  <script src="./js/audioEffects.js"></script>
+  <script src="./js/gameState.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "AnimVC: A Jornada do Fundador",
+  "short_name": "AnimVC",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090d16",
+  "theme_color": "#0f172a",
+  "description": "Aplicativo Web Gamificado de Capital Empreendedor, Cap Table e Curva J",
+  "categories": ["education", "finance", "games"],
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

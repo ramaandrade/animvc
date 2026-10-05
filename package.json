@@ -1,0 +1,14 @@
+{
+  "name": "animvc-jornada-fundador",
+  "version": "1.0.0",
+  "description": "Aplicativo Web Gamificado de Capital Empreendedor, Cap Table e Curva J",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "python serve.py",
+    "test": "node tests/capTableEngine.test.js && node tests/gameLogic.test.js"
+  },
+  "keywords": ["venture-capital", "private-equity", "pwa", "gamification", "cap-table", "j-curve"],
+  "author": "Google DeepMind / Antigravity",
+  "license": "MIT"
+}

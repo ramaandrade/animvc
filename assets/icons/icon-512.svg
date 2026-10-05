@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="rocketGrad512" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad512)" />
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#6366f1" stroke-width="10" stroke-dasharray="16 16" opacity="0.4" />
+  
+  <!-- J-Curve Swoosh -->
+  <path d="M 120 350 Q 210 400 270 320 T 400 130" fill="none" stroke="#10b981" stroke-width="20" stroke-linecap="round" />
+  <circle cx="400" cy="130" r="20" fill="#facc15" />
+  
+  <!-- Símbolo de Crescimento / Foguete -->
+  <path d="M 256 120 C 310 170 318 250 295 305 L 256 280 L 217 305 C 194 250 202 170 256 120 Z" fill="url(#rocketGrad512)" />
+  <circle cx="256" cy="190" r="18" fill="#ffffff" />
+  <polygon points="256,295 240,355 256,340 272,355" fill="#f59e0b" />
+</svg>

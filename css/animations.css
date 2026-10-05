@@ -1,0 +1,88 @@
+/* ==========================================================================
+   AnimVC: A Jornada do Fundador - animations.css
+   Micro-interações fluidas, animações de avatar e feedback visual
+   ========================================================================== */
+
+@keyframes avatarFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.avatar-wrapper {
+  animation: avatarFloat 4s ease-in-out infinite;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.pop-in {
+  animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-slide {
+  animation: fadeInSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dangerShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.shake {
+  animation: dangerShake 0.4s ease-in-out;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+  }
+}
+
+.glow-active {
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+/* Transições suaves de Donut e Canvas */
+.donut-slice {
+  transition: stroke-dasharray 0.4s ease, stroke 0.3s ease;
+}
+
+/* Animação para confete ou brilho */
+@keyframes sparkle {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+  100% { transform: scale(1) rotate(360deg); opacity: 0; }
+}
+
+.sparkle-effect {
+  position: absolute;
+  pointer-events: none;
+  animation: sparkle 0.8s ease-out forwards;
+}
